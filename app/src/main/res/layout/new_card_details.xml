@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Enter Credit Card Details"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Card Number:" android:layout_margin="2dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="5dp" android:inputType="number"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/cvv_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="CVV:" />
+
+            <EditText
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="182dp"
+            android:layout_marginStart="182dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="Expiry Date:" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="181dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:inputType="number" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Name on the Card:" android:layout_margin="2dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_margin="5dp" android:inputType="text"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="Pay" android:id="@+id/pay" />
+
+
+</LinearLayout>
